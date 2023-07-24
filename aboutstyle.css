@@ -1,0 +1,151 @@
+//our color palette: brown - B49082, medium green - 9FBF88, light green - C3BCDC, dark green - 2A6563, blue - 0882D9
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+ background-color: white;
+ margin: 0;
+ font-family: 'Work Sans', sans-serif;
+ font-weight: 400;
+ 
+}
+
+/* NAV BAR */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 30px;
+}
+
+header{
+  background: white;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo{
+  float: left;
+  padding: 0.1px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display:inline-block;
+  margin-left: 70px;
+  padding-top: 35px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%
+}
+
+/*about us*/
+
+h1 {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 50px;
+  text-align: center;
+  color: #9FBF88;
+  line-height: 60px;
+  letter-spacing: 11px;
+  margin: 2px;
+  display: block;
+  margin-top: 40px;
+  text-decoration: underline;
+}
+
+
+.container {
+  max-width:1200px;
+  margin: auto;
+  overflow: auto;
+}
+
+
+.cards {
+  margin: 4px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 290px;
+}
+
+.cards:hover {
+  box-shadow: 10px 5px 5px #ccc;
+}
+
+.cards img {
+  width: 100%;
+  height: 360px;
+}
+
+.cards .guoImg {
+  align-items: center;
+  width: 85%;
+  height: 360px;
+}
+
+.deschead {
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Cutive Mono';
+
+}
+
+.desc {
+  text-align: center;
+  font-family: 'PT Sans Narrow';
+  padding-bottom: 8px;
+}
+
+p {
+  text-align: center;
+  font-family: 'courier new', monospace;
+  display:block;
+  margin-top: 4%;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Clean & Green</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+     <header>
+      <div class="container">
+        <img src="assets/logo.png" alt="logo" class="logo">
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="facts.html">Facts</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+  <div class="quiz">
+     <p class="quizInfo"> <strong class="quizTitle2">Did you know?</strong><br/><br/> Species are already being impacted by anthropogenic climate change, and its rapid onset is limiting the ability of many species to adapt to their environments. <br/> Climate change is affecting 19% of species listed as threatened on the IUCN Red List of Threatened Species™, increasing the likelihood of their extinction.</p> 
+    <div class="quizHead">
+      <h1 class="quizTitle">ENDANGERED ANIMAL QUIZ</h1>
+      <p class="quizDescription">Which endangered animal are you? Take the quiz to find out! <br/> Afterwards, take some time to read about your animal! </p>
+    </div>
+ 
+  </div>
+      <h2 class="quizQ">Which of these foods do you like the most?</h2>
+    <div class="question">
+      <div class="answerChoice">
+         <img src="quizImgs/kwkpizza.jpg" class="quizImg">
+        <br>
+        <button id="q1a1"onclick="changeOpacity(q1a1)">Pizza</button>
+      </div>
+
+      <div class="answerChoice">
+        <img src="quizImgs/kwksalad.jpg" class="quizImg">
+        <br>
+        <button id="q1a2"onclick="changeOpacity(q1a2)">Salad</button>
+      </div>
+
+      <div class="answerChoice">
+        <img src="quizImgs/kwkramen.jpg" class="quizImg">
+        <br>
+        <button id="q1a3"onclick="changeOpacity(q1a3)">Ramen/Noodles</button>
+      </div>
+    </div> 
+    </div>
+
+      </div>
+      <h2 class="quizQ">Which of these activities do you enjoy the most?</h2>
+    <div class="question">
+      <div class="answerChoice">
+         <img src="quizImgs/kwkskiing.jpeg" class="quizImg">
+        <br>
+        <button id="q2a1"onclick="changeOpacity(q2a1)">Skiing</button>
+      </div>
+
+      <div class="answerChoice">
+        <img src="quizImgs/kwkvolleyball.jpg" class="quizImg">
+        <br>
+        <button id="q2a2"onclick="changeOpacity(q2a2)">Beach Volleyball</button>
+      </div>
+
+      <div class="answerChoice">
+        <img src="quizImgs/kwkhiking.jpg" class="quizImg">
+        <br>
+        <button id="q2a3"onclick="changeOpacity(q2a3)">Hiking</button>
+      </div>
+    </div> 
+    </div>
+    
+    </div>
+      <h2 class="quizQ">Pick a color palette</h2>
+      <div class="question">
+      <div class="answerChoice">
+         <img src="quizImgs/kwkpalette1.jpg" class="quizImg">
+        <br>
+        <button id="q3a1"onclick="changeOpacity(q3a1)">Palette 1</button>
+      </div>
+
+      <div class="answerChoice">
+        <img src="quizImgs/kwkpalette2.png" class="quizImg">
+        <br>
+        <button id="q3a2"onclick="changeOpacity(q3a2)">Palette 2</button>
+      </div>
+
+      <div class="answerChoice">
+        <img src="quizImgs/kwkpalette3.png" class="quizImg">
+        <br>
+        <button id="q3a3"onclick="changeOpacity(q3a3)">Palette 3</button>
+      </div>
+      </div> 
+    </div>
+
+    </div>
+      <h2 class="quizQ">Which book genre do you like the most?</h2>
+      <div class="question">
+      <div class="answerChoice">
+         <img src="quizImgs/kwkbook1.png" class="quizImg">
+        <br>
+        <button id="q4a1"onclick="changeOpacity(q4a1)">Fiction</button>
+      </div>
+
+      <div class="answerChoice">
+        <img src="quizImgs/kwkbook2.jpeg" class="quizImg">
+        <br>
+        <button id="q4a2"onclick="changeOpacity(q4a2)">Fantasy</button>
+      </div>
+
+      <div class="answerChoice">
+        <img src="quizImgs/kwkbook3.jpg" class="quizImg">
+        <br>
+        <button id="q4a3"onclick="changeOpacity(q4a3)">Memoir & Autobiography</button>
+      </div>
+      </div> 
+    </div>
+
+    </div>
+      <h2 class="quizQ">How would you classify your spice tolerance?</h2>
+      <div class="question">
+      <div class="answerChoice">
+         <img src="quizImgs/kwkface1.png" class="quizImg face">
+        <br>
+        <button id="q5a1"onclick="changeOpacity(q5a1)">I can take little to no spice!</button>
+      </div>
+
+      <div class="answerChoice">
+        <img src="quizImgs/kwkface2.jpg" class="quizImg face">
+        <br>
+        <button id="q5a2"onclick="changeOpacity(q5a2)">I can take medium spice!</button>
+      </div>
+
+      <div class="answerChoice">
+        <img src="quizImgs/kwkface3.png" class="quizImg face">
+        <br>
+        <button id="q5a3"onclick="changeOpacity(q5a3)">SPICE IS MY JAM</button>
+      </div>
+      </div> 
+    </div>
+
+    <p class="result" id="result">Your animal is...</p>
+    <button class="restart" id="restart">Restart</button>
+
+    <div class="pbInfo" id="pbInfo">
+      <p class="quizQ">Learn more about polar bears using these sites: </p> 
+      <p class="quizInfo"> Click <a href="https://www.worldwildlife.org/species/polar-bear">HERE</a> for an overview of polar bears, as well as why they matter, their threats, and actions you can take to help.<br>Click <a href="https://www.nytimes.com/2020/07/20/climate/polar-bear-extinction.html">HERE</a> for an article on how polar bears are struggling as a result of global warming.<br>Click <a href="https://polarbearsinternational.org">HERE</a> for a website dedicated to polar bears </p>
+      <img src="https://bowseat.org/wp-content/uploads/2018/12/Art-Roy-Park-847x1024.jpg" class="infoPhotos pbImg">
+    </div>
+
+    <div class="butterflyInfo" id="butterflyInfo">
+      <p class="quizQ">Learn more about monarch butterflies using these sites: </p> 
+      <p class="quizInfo"> Click <a href="https://www.worldwildlife.org/species/monarch-butterfly">HERE</a> for an overview of monarch butterflies, as well as why they matter, their threats, and actions you can take to help.<br>Click <a href="https://www.npr.org/2021/02/26/971650046/climate-change-deforestation-threaten-monarch-butterfly-migration">HERE</a> for an article on how monarch butterflies are struggling as a result of global warming.<br>Click <a href="https://www.fws.gov/savethemonarch/">HERE</a> for great ideas on how to protect monarch butterflies as an individual, community, and in agriculture.</p>
+      <img src="https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1440,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1539724938/181016-Daly-Climate-Change-tease_aetrow" class="infoPhotos">
+    </div>
+
+    <div class="turtleInfo" id="turtleInfo">
+      <p class="quizQ">Learn more about sea turtles using these sites:</p> 
+      <p class="quizInfo">Click <a href="https://www.worldwildlife.org/species/sea-turtle">HERE</a> for an overview of sea turtles, as well as why they matter, their threats, and actions you can take to help.<br>Click <a href="https://bowseat.org/gallery/journey-of-a-green-sea-turtle-cautionary-vignettes-from-past-present-and-future-hong-kong/">HERE</a> for a touching short story of how sea turtles are hurt by climate change.<br>Click <a href="https://www.fisheries.noaa.gov/feature-story/what-can-you-do-save-sea-turtles">HERE</a> for great ideas on how to save sea turtles and their habitat.</p>
+      <img src="assets/turtleImg.png" class="infoPhotos">
+    </div>
+
+    <script src="scriptquiz.js"></script>
+  </body>
+</html>

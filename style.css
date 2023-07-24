@@ -1,0 +1,454 @@
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC);
+//our color palette: brown - B49082, medium green - 9FBF88, light green - C3BCDC, dark green - 2A6563, blue - 0882D9
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+ background-color: white;
+ margin: 0;
+ font-family: 'Work Sans', sans-serif;
+ font-weight: 400;
+ 
+}
+
+/* NAV BAR */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header{
+  background: white;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo{
+  float: left;
+  padding: 0.1px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display:inline-block;
+  margin-left: 70px;
+  padding-top: 35px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%
+}
+
+/* HOME PAGE SCROLL EFFECT*/
+.container2 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+}
+
+.container2 .section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  scroll-snap-mode: multiply;
+  background-blend-mode: multiply;
+}
+
+.container2 .section:nth-child(1){
+  background: url("assets/bg3.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* Two and Four are just blank pages*/
+.container2 .section:nth-child(2){
+  background: url("assets/bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.container2 .section:nth-child(3){
+  background: url("assets/bg2.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.container2 .section:nth-child(4){
+  background: url("assets/bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*HOME PAGE DECORATION*/
+
+/*section 1*/
+.container2 .section .content {
+ text-align: center;
+ padding-top: 14%;
+ padding-bottom: 20%;
+ margin-right: 30%;
+ margin-left: 30%; 
+}
+
+.container2 .section .content h2 {
+  color: white;
+  font-weight: normal;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 2.5em;
+  font-family:'Courier New', monospace;
+  border: 2px solid white;
+  background: rgba(150, 150, 150, .5);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+/* Section 2*/
+.container2 .section .content2 {
+ text-align: center;
+ margin-top: 7%;
+ margin-right: 15%;
+ margin-left: 15%; 
+}
+
+.container2 .section .content2 h2 {
+  color: black;
+  font-weight: normal;
+  display: inline-block;
+  padding: 10px 20px;
+  font-family: 'verdana', sans-serif;
+  font-size: 2em;
+}
+.container2 .section .content2 p {
+  background: white;
+  color: black;
+  font-weight: 300;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-family: 'Lucida Console', monospace;
+}
+
+.gif {
+  width: 40%;
+}
+
+.container2 .section .content2 p2 {
+  font-family: 'courier new', monospace;
+  display:block;
+  margin-top: 2px;
+}
+
+/* Section 3 */
+.container2 .section .content3 {
+ text-align: center;
+ padding-top: 20%;
+ padding-bottom: 20%;
+ margin-right: 30%;
+ margin-left: 30%; 
+}
+
+.container2 .section .content3 h2 {
+  color: white;
+  font-weight: 500;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 3em;
+  background: rgba(150, 150, 150, .4);
+  font-family:'Courier New', monospace;
+  border: 2px solid white;
+}
+
+/*Section 4*/
+
+.container2 .section .content4 {
+  text-align: center;
+ padding-top: 7%;
+ padding-bottom: 10%;
+ margin-right: 27%;
+ margin-left: 27%; 
+}
+
+.container2 .section .content4 h2 {
+  margin-top: 5%;
+  margin-bottom: 10%;
+  color: #9FBF88;
+}
+
+.container2 .section .content4 h3 {
+  margin-top:7%;
+  border-top: 1px solid #ccc;
+}
+.container2 .section .content4 p {
+  font-family: 'garamond', serif;
+}
+
+.container2 .section .content4 p2 {
+  font-family: 'courier new', monospace;
+  display:block;
+  margin-top: 9%;
+}
+
+.container2 .section .content4 strong {
+ font-size: 20px;
+}
+
+
+/*QUIZ PAGE*/
+
+.quizHead {
+  border: 3px solid #B49082;
+  border-radius: 10px;
+  margin-left: 13%;
+  margin-right: 13%;
+  margin-bottom: 7%;
+}
+
+.quizTitle {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 50px;
+  text-align: center;
+  color: #9FBF88;
+  line-height: 60px;
+  letter-spacing: 11px;
+  margin: 2px;
+  display: block;
+  margin-top: 40px;
+}
+
+.quizDescription {
+  text-align: center;
+  font-size: 25px;
+  padding-top: 20px;
+  margin-bottom: 2%;
+}
+
+.quizTitle2 {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 40px;
+  color: #9FBF88;
+}
+
+.quizInfo
+{
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 18px;
+  color: black;
+  text-align: center;
+  padding: 25px;
+  margin-bottom: 60px;
+}
+
+.question {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2em;
+}
+
+.quizQ
+{
+  text-align: center;
+  font-family: 'Amatic SC';
+  font-size: 40px;
+}
+  
+/* STYLE FLEX ITEM */
+.answerChoice {
+  margin: 5px;
+}
+
+/* STYLE IMAGES */
+.quizImg {
+  height: 15em;
+  width: 350px;
+}
+
+.face
+{
+  width: 250px;
+}
+
+.result 
+{
+  font-size: 45px;
+  font-family: 'Times New Roman';
+  text-align: center;
+  background-color: #9FBF88;
+  color: white;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.restart
+{
+  height: 60px;
+  margin-left: 45%;
+  margin-right: 45%;
+  margin-bottom: 100px;
+  font-family: 'Amatic SC';
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.infoPhotos
+{
+  height: 250px;
+  width: 400px;
+  margin-right: 60px;
+  margin-bottom: 60px;
+  display: inline;
+}
+
+.pbImg
+{
+  height: 380px;
+  width: 280px;
+}
+
+.pbInfo
+{
+  font-size: 25px;
+  font-family: 'Times New Roman';
+  text-align: left;
+  margin-left: 30px;
+  display: none;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.butterflyInfo
+{
+  font-size: 25px;
+  font-family: 'Times New Roman';
+  text-align: left;
+  margin-left: 30px;
+  display: none;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.turtleInfo
+{
+  font-size: 25px;
+  font-family: 'Times New Roman';
+  text-align: left;
+  margin-left: 30px;
+  display: none;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.hide {
+  display: none;
+}
+
+/* STYLE BUTTON */
+button { 
+  margin-top: 5px;
+  align-items: center;
+  height: 40px;
+  font-family: 'Amatic SC';
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.solintro h2{
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 50px;
+  text-align: center;
+  color: #9FBF88;
+  line-height: 60px;
+  letter-spacing: 11px;
+  margin: 2px;
+  display: block;
+  margin-top: 40px;
+}
+
+.solintro p {
+  text-align: center;
+  font-size: 25px;
+  padding-top: 20px;
+  margin-bottom: 2%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.solbgd{
+  background-color: white;
+}
+.textfacts{
+  text-align:center;
+  color: black;
+  font-family: 'verdana';
+  background-color: white;
+}
+
+.paragraph {
+  margin-left: 27%;
+  margin-right: 27%;
+}
+.lsolheader{
+  font-size: 40px;
+  color: #9FBF88;
+}
+.solheader{
+  font-size: 20px;
+}
+
+.vid2{
+  display:flexbox;
+  flex-direction: row;
+  justify-content: center;
+  color: #9FBF88;
+  text-align:center;
+  background: white;
+}
+
+.solimg{
+  width: 1500px;
+}
+
+
